@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#08101f">
+<title>Ashikur HTML Code Studio PRO 70K</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="app">
+<header class="top">
+  <div class="brand"><b>⚡ Ashikur</b><span>HTML Code Studio <strong>PRO 70K</strong></span></div>
+  <div class="actions">
+    <button id="themeBtn">🌙</button><button id="saveBtn">💾</button>
+    <button id="runBtn">▶</button><button id="toolsBtn">☰</button>
+  </div>
+</header>
+<div class="status"><span>● <b id="state">Ready</b></span><span id="mode">HTML</span><span id="pos">Ln 1</span><span id="lineCount">0 lines</span></div>
+
+<nav class="tabs">
+  <button class="tab active" data-file="html">🌐 index.html</button>
+  <button class="tab" data-file="css">🎨 style.css</button>
+  <button class="tab" data-file="js">⚙️ script.js</button>
+</nav>
+
+<section id="editorView" class="editorView">
+  <div class="filebar">
+    <div><b id="fileName">index.html</b><small id="engine">70K Large-file engine</small></div>
+    <div class="actions"><button id="undoBtn">↶</button><button id="redoBtn">↷</button><button id="findBtn">🔍</button></div>
+  </div>
+  <div id="editorHost" class="editorHost">
+    <div id="gutter" class="gutter"></div>
+    <div id="scrollArea" class="scrollArea"><div id="spacer"></div><div id="rows"></div></div>
+    <textarea id="editor" spellcheck="false" autocomplete="off" autocorrect="off" autocapitalize="off" wrap="off"></textarea>
+  </div>
+  <div class="foot"><span id="cursor">Ln 1, Col 1</span><span id="chars">0 chars</span></div>
+</section>
+
+<section id="previewView" class="previewView hidden">
+  <div class="filebar"><b>👁 Live Preview</b><div class="actions"><button id="refreshBtn">↻</button><button id="browserBtn">🌐</button><button id="closePreview">✕</button></div></div>
+  <iframe id="preview" sandbox="allow-scripts allow-forms allow-modals"></iframe>
+</section>
+
+<div id="quick" class="quick"></div>
+
+<aside id="drawer" class="drawer">
+  <div class="drawerHead"><b>🧰 PRO Tools</b><button id="closeTools">✕</button></div>
+  <div class="grid">
+    <button data-tool="check">🧪<small>Code Check</small></button>
+    <button data-tool="review">👀<small>Review / Diff</small></button>
+    <button data-tool="find">🔍<small>Find / Replace</small></button>
+    <button data-tool="goto">🎯<small>Go To Line</small></button>
+    <button data-tool="parts">✂️<small>Split & Copy</small></button>
+    <button data-tool="history">🕘<small>Version History</small></button>
+    <button data-tool="download">📥<small>Download</small></button>
+    <button data-tool="project">🗂️<small>File Manager</small></button>
+    <button data-tool="backup">💾<small>Backup / Restore</small></button>
+    <button data-tool="stats">📊<small>Statistics</small></button>
+    <button data-tool="source">🌐<small>Public HTML Source</small></button>
+    <button data-tool="display">🔎<small>Zoom / Compact</small></button>
+  </div>
+</aside>
+
+<div id="modal" class="modal hidden"><div class="modalBox"><div class="modalHead"><b id="modalTitle">Tool</b><button id="modalClose">✕</button></div><div id="modalBody"></div></div></div>
+<nav class="bottom"><button id="navEdit" class="active">⌨️<small>Editor</small></button><button id="navPreview">▶️<small>Preview</small></button><button id="navTools">🧰<small>Tools</small></button><button id="navFiles">📁<small>Files</small></button></nav>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
